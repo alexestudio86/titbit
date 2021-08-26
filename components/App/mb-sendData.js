@@ -3,7 +3,7 @@
 // Send data
 const sendData = () => {
   // Phone number
-  whatsappNumber = '+5215510698215';
+  whatsappNumber = '+5217222478451';
   // Intro
   introText = '%5F'+encodeURIComponent('Hola, me gustaría ordenar')+'%5F%0A%0A';
   // Body
