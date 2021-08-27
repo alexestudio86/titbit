@@ -2,7 +2,7 @@
 
 const createWelcome = () => {
 
-  generalModal();
+  modalGeneral();
   const modal = document.getElementById('modal');
   const fragment = document.createDocumentFragment();
   const welcomeTemplate = document.getElementById('welcomeTemplate').content;
