@@ -21,3 +21,8 @@ const createWelcome = () => {
   });
 
 }
+
+// Inicialice
+if( localStorage.advice === undefined ){
+  createWelcome();
+}
