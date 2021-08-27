@@ -16,7 +16,7 @@ const createWelcome = () => {
 
   // Add evento to close modal
   modal.querySelector('button').addEventListener('click', () => {
-    generalModal();
+    modalGeneral();
     localStorage.advice = 'true';
   });
 
