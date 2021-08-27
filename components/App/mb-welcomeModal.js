@@ -2,7 +2,7 @@
 const popWindow = localStorage.getItem('popWindow');
 if(!popWindow){
 
-  generalModal();
+  modalGeneral();
 
   let modal = document.getElementById('modal');
 
