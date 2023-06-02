@@ -93,7 +93,7 @@ const getAjax = async(e) => {
 
 // ADD EVENT TO ARTICLES
 const getArticles = () => {
-  let articles = document.querySelectorAll('#Blog1 article a[data-ident]');
+  let articles = document.querySelectorAll('#Blog1 article button[data-ident]');
   for (let article of articles){
     article.addEventListener('click', getAjax);
   }
