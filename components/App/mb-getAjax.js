@@ -27,13 +27,16 @@ const getAjax = async(e) => {
   try {
     const res = await fetch(`/feeds/posts/full/${e.currentTarget.getAttribute('data-ident')}?alt=json`);
     //const res = await fetch('https://www.titbit.com.mx/'+'feeds/posts/full/' + e.currentTarget.getAttribute('data-ident') + '?alt=json');
-		const data = await res.json()
+      const data = await res.json();
 
       modalGeneral();
       const modal = document.getElementById('modal');
       const fragment = document.createDocumentFragment();
-      const postTemplate = document.getElementById('postTemplate').content
+      const postTemplate = document.getElementById('postTemplate').content;
 
+      // Show route
+      console.log(res);
+      
       // Post Title
       postTemplate.querySelector('header h1 b').textContent = data.entry.title.$t;
 
