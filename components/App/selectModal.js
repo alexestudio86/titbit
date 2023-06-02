@@ -1,6 +1,6 @@
-// CREATE WELCOME WINDOW
+// CREATE SELECT MODAL
 
-const createWelcome = () => {
+const createSelect = () => {
 
   modalGeneral();
   const modal = document.getElementById('modal');
@@ -18,7 +18,7 @@ const createWelcome = () => {
   modal.appendChild(fragment);
 
   // Add event to close modal
-  modal.querySelector('button').addEventListener('click', () => {
+  modal.querySelector('#closeSM').addEventListener('click', () => {
     modal.classList.remove("w3-black");
     modalGeneral();
     //sessionStorage.selectMenu = 'true';
@@ -28,5 +28,5 @@ const createWelcome = () => {
 
 // Inicialice
 //if( sessionStorage.selectMenu === undefined ){
-  createWelcome();
+  createSelect();
 //}
