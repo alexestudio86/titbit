@@ -5,8 +5,8 @@ const createWelcome = () => {
   modalGeneral();
   const modal = document.getElementById('modal');
   const fragment = document.createDocumentFragment();
-  const welcomeTemplate = document.getElementById('welcomeTemplate').content;
-  const clone = welcomeTemplate.cloneNode(true);
+  const selectTemplate = document.getElementById('selectTemplate').content;
+  const clone = selectTemplate.cloneNode(true);
 
   // Insert Fragment
   fragment.appendChild(clone);
@@ -17,12 +17,12 @@ const createWelcome = () => {
   // Add evento to close modal
   modal.querySelector('button').addEventListener('click', () => {
     modalGeneral();
-    localStorage.advice = 'true';
+    sessionStorage.selectMenu = 'true';
   });
 
 }
 
 // Inicialice
-if( localStorage.advice === undefined ){
+if( sessionStorage.selectMenu === undefined ){
   createWelcome();
 }
