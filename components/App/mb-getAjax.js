@@ -25,7 +25,8 @@ const showCar = () => {
 
 const getAjax = async(e) => {
   try {
-    const res = await fetch('https://www.titbit.com.mx/'+'feeds/posts/full/' + e.currentTarget.getAttribute('data-ident') + '?alt=json');
+    const res = await fetch(`https://www.titbit.com.mx/feeds/posts/full/${e.currentTarget.getAttribute('data-ident')}?alt=json`);
+    //const res = await fetch('https://www.titbit.com.mx/'+'feeds/posts/full/' + e.currentTarget.getAttribute('data-ident') + '?alt=json');
 		const data = await res.json()
 
       modalGeneral();
